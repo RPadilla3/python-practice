@@ -1,9 +1,9 @@
-# from sklearn import tree
-# features = [[140, 1], [130, 1], [150, 0], [170, 0]]
-# labels = [0, 0, 1, 1]
-# clf = tree.DecisionTreeClassifier()
-# clf = clf.fit(features, labels)
-# print (clf.predict([[180, 0]]))
+from sklearn import tree
+features = [[140, 1], [130, 1], [150, 0], [170, 0]]
+labels = [0, 0, 1, 1]
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(features, labels)
+print(clf.predict([[180, 0]]))
 
 import numpy as np
 from sklearn.datasets import load_iris
@@ -20,7 +20,7 @@ test_data = iris.data[test_idx]
 clf = tree.DecisionTreeClassifier()
 clf.fit(train_data, train_target)
 
-print (test_target)
-print (clf.predict(test_data))
-print (test_data[1], test_target[1])
-print (iris.feature_names, iris.target_names)
+print(test_target)
+print(clf.predict(test_data))
+print(test_data[1], test_target[1])
+print(iris.feature_names, iris.target_names)
