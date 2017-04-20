@@ -3,7 +3,7 @@ import pygame
 pygame.init()
 
 gameDisplay = pygame.display.set_mode((800, 600))
-pygame.display.set_caption('A Bit Racy')
+pygame.display.set_caption('Race It')
 clock = pygame.time.Clock()
 
 crashed = False
