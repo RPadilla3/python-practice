@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 
-twitter_password = 'gordo64'
+twitter_password = ''
 
 path = '/Users/Rodolfo/Desktop/chrome-bot/chromedriver'
 
@@ -48,7 +48,7 @@ login_twitter = driver.find_element_by_xpath(
 
 tweet_box = driver.find_element_by_xpath("""//*[@id="tweet-box-home-timeline"]""").click()
 tweet_input = driver.find_element_by_xpath("""//*[@id="tweet-box-home-timeline"]""")
-tweet_input.send_keys(new_paragraph)
+tweet_input.send_keys(new_paragraph + "sent at ")
 send_tweet = driver.find_element_by_xpath(
     """//*[@id="timeline"]/div[2]/div/form/div[3]/div[2]/button""").click()
 
